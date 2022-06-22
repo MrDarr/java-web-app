@@ -5,8 +5,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import net.javaguides.sms.entity.Student;
-import net.javaguides.sms.repository.StudentRepository;
+
+
+import net.javaguides.sms.entity.Question;
+import net.javaguides.sms.repository.QuestionRepository;
 
 @SpringBootApplication
 public class StudentManagementSystemApplication implements CommandLineRunner{
@@ -15,9 +17,11 @@ public class StudentManagementSystemApplication implements CommandLineRunner{
 		SpringApplication.run(StudentManagementSystemApplication.class, args);
 	}
 
-	@Autowired
-	private StudentRepository studentRepository;
+	//@Autowired
+//private StudentRepository studentRepository;
 	
+
+	@Autowired QuestionRepository questionRepository;
 	@Override
 	public void run(String... args) throws Exception {
 		
@@ -31,7 +35,8 @@ public class StudentManagementSystemApplication implements CommandLineRunner{
 		 * Student student3 = new Student("tony", "stark", "tony@gmail.com");
 		 * studentRepository.save(student3);
 		 */
-		
+		//Question question1 = new Question("does this work?");
+		//questionRepository.save(question1);
 	}
 
 }

@@ -8,8 +8,8 @@
 //import javax.persistence.Table;
 //
 //@Entity
-//@Table(name = "students")
-//public class Student {
+//@Table(name = "voters")
+//public class Voter {
 //	
 //	@Id
 //	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,18 +21,18 @@
 //	@Column(name = "last_name")
 //	private String lastName;
 //	
-//	@Column(name = "email")
-//	private String email;
+////	@Column(name = "email")
+////	private String email;
 //	
-//	public Student() {
+//	public Voter() {
 //		
 //	}
 //	
-//	public Student(String firstName, String lastName, String email) {
+//	public Voter(String firstName, String lastName) {
 //		super();
 //		this.firstName = firstName;
 //		this.lastName = lastName;
-//		this.email = email;
+//		//this.email = email;
 //	}
 //	public Long getId() {
 //		return id;
@@ -52,10 +52,10 @@
 //	public void setLastName(String lastName) {
 //		this.lastName = lastName;
 //	}
-//	public String getEmail() {
-//		return email;
-//	}
-//	public void setEmail(String email) {
-//		this.email = email;
-//	}
+////	public String getEmail() {
+////		return email;
+////	}
+////	public void setEmail(String email) {
+////		this.email = email;
+////	}
 //}
